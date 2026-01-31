@@ -1,0 +1,13 @@
+def is_palindrome(s):
+    filtered = ""
+    for ch in s:
+        if ch.isalnum():
+            filtered += ch.lower()
+    return filtered == filtered[::-1]
+
+string = input("Enter a string: ")
+
+if is_palindrome(string):
+    print("Valid Palindrome")
+else:
+    print("Not a Palindrome")
